@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delicious Recipes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .container {
+            display: block;
+            margin-left: auto;
+    margin-right:auto;
+
+  position: relative;
+  width: 70%;
+  
+}
+
+.image {
+  opacity: 0.8;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  height: max-content;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  font-size:x-large;
+  height: 70px;
+    align-items: center;
+  background-color: #220065;
+  color: white;
+  font-size: 16px;
+  padding: 25px 32px;
+}
+.recipe{
+  font-size:x-large;
+  padding: 20px 0px;
+    text-align: center;
+    margin-top: auto;
+    background-color: rgb(178, 249, 249);
+    height: 70px;
+}    
+h1{
+  padding: 20px 0px;
+    text-align: center; 
+    height: 80px; 
+    align-items: center; 
+    align-content: center; 
+    background-color: #1b4425; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; 
+    color: azure;
+}
+h2{
+  padding: 10px ;
+  text-align: center; 
+  color: rgb(223, 255, 234); 
+  background-color: rgb(0, 54, 130); 
+  height: 50px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.instruct{
+  border-radius: 25px;
+  background-color: rgb(185, 255, 218);
+}
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.options a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+.options a:hover {
+  background-color: rgb(56, 202, 255);
+  color: white;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(208, 192, 246);
+  color: rgb(0, 0, 0);
+}
+</style>
+</head>
+<body>
+  <h1>Delicious Recipes</h1>
+  <div class="container">
+      <img src="https://online.visual-paradigm.com/repository/images/0124b6fc-f251-413e-868a-c3cde4824222/youtube-thumbnails-design/easy-vegan-food-recipes-youtube-thumbnail.png" class="image" alt="Thumbnail for website" height="500" width="1200">
+      <div class="middle">
+          <div class="text">Paneer Sandwich</div>
+        </div>
+  </div><br><br>
+  <div class="recipe">
+        <strong>Paneer Sandwich recipe</strong>     
+</div>
+<br>
+<p><b>Table of contents: </b></p>
+<div class="navbar">
+  <ul>
+  <div class=options>
+    <li><a href="">Home</a></li>
+    <li><a href="#main">Ingredients</a></li>
+    <li><a href="#instruct">Instructions</a></li>
+    <li><a href="">Contact</a></li>
+    </div>
+  </ul>
+  </div>
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h2>INGREDIENTS</h2>
+
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="https://assets.bonappetit.com/photos/5c62e4a3e81bbf522a9579ce/16:9/w_4000,h_2250,c_limit/milk-bread.jpg" alt="Mountains" style="width:100%">
+      <h3>Sandwich bread</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://malayalam.indianexpress.com/wp-content/uploads/2022/07/Homemade-Paneer-making-tips.jpg?w=350" alt="Lights" style="width:100%">
+      <h3>Paneer</h3>
+      
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://www.wondriumdaily.com/wp-content/uploads/2020/03/header-16.jpg" alt="Nature" style="width:100%">
+      <h3>Tomatoes</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://www.healthshots.com/wp-content/uploads/2020/11/benefits-of-carrots.jpg" alt="Mountains" style="width:100%">
+      <h3>Carrots</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://www.pngmart.com/files/1/Sweet-Corn-PNG-Transparent-Image.png" alt="Mountains" style="width:100%">
+      <h3>Boiled corn</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://images.hindustantimes.com/img/2022/04/20/1600x900/raw_onion_thumb_1650430897134_1650430905815.jpg" alt="Mountains" style="width:100%">
+      <h3>Onions</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://m.media-amazon.com/images/I/71C8KDDChsL._SX679_PIbundle-4,TopRight,0,0_SX679SY355SH20_.jpg" alt="Mountains" style="width:100%">
+      <h3>Spicesk</h3>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="https://cdn.shopify.com/s/files/1/0017/9234/4153/products/tomk4_1024x1024@2x.jpg?v=1587723114" alt="Mountains" style="width:100%">
+      <h3>Tomato Ketchup</h3>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+
+<!-- END MAIN -->
+</div><br>
+<h2> INSTRUCTIONS </h2><br> 
+<div>
+    <ol class="instruct">
+        <li ><b>Make Coriander Chutney</b><br>
+            To make the coriander or cilantro chutney, take 1 cup tightly packed coriander leaves (which have been rinsed thoroughly in water and drained) and 2 green chillies in a small blender or grinder.
+
+Add ½ teaspoon chaat masala powder and salt as required. Grind or blend till fine and smooth. No need to add water while blending or grinding.<br>
+           <br><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2019/09/sandwich-chutney-for-paneer-sandwich.jpg" alt="" height="200"></li><br>
+        <hr><br><li><b>Prepare Paneer Stuffing</b><br>
+            Crumble 200 grams paneer in a bowl or pan. Do not crumble finely. Some small chunks of paneer is fine. You can even chop paneer in small cubes instead of crumbling.</li><br>
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/01/paneer-sandwich-recipe01.jpg" alt="" height="200"></li><br>
+        <hr><li><b>Add the following spice powders:</b><br>
+            1 pinch of turmeric powder <br>
+¼ teaspoon cumin powder <br>
+½ teaspoon kashmiri red chilli powder <br>
+½ teaspoon coriander powder (ground coriander) <br>
+½ teaspoon garam masala powder <br>
+½ teaspoon dry mango powder (amchur powder) <br> 
+<br><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/01/paneer-sandwich-recipe02.jpg" alt="" height="200">
+</li><br><hr>
+        <li><b> Add 2 tablespoons fresh curd (yogurt). Season with salt as per taste.</b> 
+            <br><br><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/01/paneer-sandwich-recipe03.jpg" alt="" height="200">
+        </li><br><hr>
+        <li><b>Mix very well.</b><br>
+            <br><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/01/paneer-sandwich-recipe04.jpg" alt="" height="200"></li><br>
+        <hr><li><b>Make Grilled Paneer Sandwich</b><br>
+             
+            <br><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/01/paneer-sandwich-recipe05.jpg" alt="" height="200">
+        </li><br><hr>
+        <li><b>Spread the prepared coriander chutney on the slices.</b> Addition of chutney is optional and you can skip it also.
+
+            Or you can use any green chutney you have like, mint chutney or mint coriander chutney. Other options are mayonnaise or your preferred sauce.
+            <br><br><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/01/paneer-sandwich-recipe06.jpg" alt="" height="200">
+        </li><br><hr>
+        <li> Now, place some thin onion slices and sliced bell pepper. I have used red bell pepper. But you can add green or yellow bell pepper or skip them altogether.
+            <b> Add the prepared paneer stuffing.</b> You can add butter/cheese slices also.<br>
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/01/paneer-sandwich-recipe09.jpg" alt="" height="200">
+        </li><br><hr>
+        <li><b>Cover with the remaining bread slices on which both butter and coriander chutney have already been spread.</b>
+            <br><br><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/01/paneer-sandwich-recipe10.jpg" alt="" height="200">
+            </li><br><hr>
+            <li><b>Place the paneer sandwiches in a preheated sandwich maker.</b>
+                <br><br>
+                <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/01/paneer-sandwich-recipe10a.jpg" alt="" height="200">
+                </li><br><hr>
+            <li><b>Grill till crisp and golden.</b>
+                    <br><br><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/01/paneer-sandwich-recipe11.jpg" alt="" height="200">
+                    </li><br><hr>
+            <li><b>Remove and serve grilled Paneer Sandwich hot or warm with any dip or sauce of your choice. You can serve it with tomato ketchup, mint chutney or coriander chutney.</b>
+                        <br><br><img src="https://www.vegrecipesofindia.com/wp-content/uploads/2017/01/paneer-sandwich-recipe-1.jpg" alt="" height="200">
+                        </li><hr>
+   </ol>
+  </div>
+  <footer>
+    <p>© 2020 DeliciousThings<br>
+    <a href="mailto:hege@example.com">deliciousthings165@gmail.in</a></p>
+  </footer>
+</body>
+</html>
